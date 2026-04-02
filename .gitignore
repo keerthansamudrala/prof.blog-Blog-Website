@@ -35,3 +35,9 @@ yarn-error.log*
 next-env.d.ts
 
 /app/generated/prisma
+
+# Local environment variables
+.env
+.env.production
+.env.local
+.env.*.local

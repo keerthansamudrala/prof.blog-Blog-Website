@@ -11,6 +11,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
     where: q ? {
       title: {
         contains: q,
+        mode: 'insensitive',
       }
     } : undefined,
     orderBy: { createdAt: 'desc' },
